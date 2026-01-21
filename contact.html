@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Kavita Sharma to commission custom art or inquire about art classes.">
+    <title>Contact | Kavita Sharma</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Caveat:wght@500;600&family=DM+Sans:wght@400;500&family=Hind:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Art8.css">
+</head>
+<body lang="en">
+    
+    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Switch Language" title="Switch Language / भाषा बदलें">
+        <span data-lang="en">हिं</span>
+        <span data-lang="hi">EN</span>
+    </button>
+
+    <nav>
+        <a href="index.html" class="logo" aria-label="Kavita Sharma Home">
+            <span data-lang="en">Kavita Sharma</span>
+            <span data-lang="hi">कविता शर्मा</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hi">परिचय</span></a></li>
+            <li><a href="gallery.html"><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span></a></li>
+            <li><a href="services.html"><span data-lang="en">Services</span><span data-lang="hi">सेवाएं</span></a></li>
+            <li><a href="contact.html" class="active"><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span></a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <section class="contact" id="contact">
+        <div class="section-header reveal">
+            <span class="section-tag">
+                <span data-lang="en">Get In Touch</span>
+                <span data-lang="hi">संपर्क सूत्र</span>
+            </span>
+            <h1 class="section-title">
+                <span data-lang="en">Let's Create Together</span>
+                <span data-lang="hi">आइए एक साथ बनाएं</span>
+            </h1>
+            <div class="hand-drawn-line">
+                <svg viewBox="0 0 100 30">
+                    <path d="M0 15 Q25 5, 50 15 T100 15"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info reveal">
+                <div data-lang="en">
+                    <h3>Let's Create Something Beautiful</h3>
+                    <p>Every piece begins with a conversation. Share your vision, and together we'll bring it to life.</p>
+                </div>
+                <div data-lang="hi">
+                    <h3>आइए, कुछ यादगार रचते हैं</h3>
+                    <p>हर कृति एक संवाद से शुरू होती है। अपनी यादें साझा करें, हम उन्हें रंगों में जीवंत करेंगे।</p>
+                </div>
+                
+                <ul class="contact-details">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span data-lang="en">Gurugram, Haryana, India</span>
+                        <span data-lang="hi">गुरुग्राम, हरियाणा, भारत</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M22 6l-10 7L2 6"/>
+                        </svg>
+                        <a href="mailto:kavita.sharma.art@email.com">kavita.sharma.art@email.com</a>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <a href="https://instagram.com/handmemories.archive" target="_blank" rel="noopener">@handmemories.archive</a>
+                    </li>
+                </ul>
+
+                <div class="contact-image">
+                    <img src="Art_img/WhatsApp_Image_2026-01-20_at_10_41_02.jpeg" alt="Kavita Sharma with family" loading="lazy">
+                </div>
+            </div>
+            
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name / आपका नाम" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email / ईमेल" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject / विषय">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Tell me about your vision... / अपनी दृष्टि के बारे में बताएं..." rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <span data-lang="en">Send Message</span>
+                    <span data-lang="hi">भेजें</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-logo">Kavita Sharma</p>
+        <p class="footer-tagline">
+            <span data-lang="en">Hand Drawn Memories • Archive Across Paper</span>
+            <span data-lang="hi">कागज़ पर सिमटी विरासत • स्मृतियों का हस्तशिल्प</span>
+        </p>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/handmemories.archive" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+            </a>
+        </div>
+        
+        <p class="footer-copy">
+            <span data-lang="en">© 2026 Kavita Sharma. All artworks are original creations.</span>
+            <span data-lang="hi">© 2026 कविता शर्मा। सभी कलाकृतियाँ मौलिक रचनाएं हैं।</span>
+        </p>
+    </footer>
+
+    <script src="Art8.js"></script>
+</body>
+</html>

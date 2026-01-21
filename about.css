@@ -1,0 +1,399 @@
+/* ==========================================
+   ABOUT PAGE — WARM, STORY-LED, QUIET
+   ========================================== */
+
+/* ---------- HERO ---------- */
+
+.story-hero {
+    padding: 7rem 3rem 5rem;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.03) 0%, transparent 50%),
+        linear-gradient(to bottom, var(--paper) 0%, var(--paper-dark) 100%);
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); /* text a bit wider */
+    gap: 5rem;
+    align-items: center;
+}
+
+.hero-intro {
+    max-width: 620px;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.6rem, 4vw, 3.6rem);
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.hero-text {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--charcoal);
+    opacity: 0.9;
+}
+
+.hero-portrait {
+    position: relative;
+    display: inline-block;
+    max-width: 420px;
+    justify-self: end;
+}
+
+.hero-portrait img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow:
+        0 12px 40px rgba(26,22,18,0.15),
+        0 4px 16px rgba(26,22,18,0.1);
+    filter: sepia(5%) saturate(1.03);
+}
+
+.portrait-note {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1.5rem;
+    background: var(--paper);
+    padding: 0.9rem 1.4rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.05rem;
+    color: var(--terracotta);
+    box-shadow:
+        0 8px 24px rgba(26,22,18,0.12),
+        0 2px 8px rgba(26,22,18,0.08);
+    border-left: 3px solid var(--terracotta);
+    max-width: 230px;
+    line-height: 1.5;
+    transform: rotate(-2deg);
+}
+
+/* ---------- LIFE JOURNEY (3 blocks) ---------- */
+
+.life-journey {
+    padding: 6rem 3rem;
+    background: var(--paper);
+}
+
+.story-block {
+    max-width: 1100px;
+    margin: 0 auto 7rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-block:last-child {
+    margin-bottom: 0;
+}
+
+/* explicit left/right control */
+.story-block.layout-left .story-content {
+    order: 1;
+}
+.story-block.layout-left .story-image {
+    order: 2;
+}
+
+.story-block.layout-right .story-content {
+    order: 2;
+}
+.story-block.layout-right .story-image {
+    order: 1;
+}
+
+.story-content {
+    max-width: 650px;
+}
+
+.story-era {
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    color: var(--terracotta);
+    opacity: 0.85;
+    margin-bottom: 1rem;
+}
+
+.story-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 1.3rem;
+}
+
+.story-text {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--charcoal);
+    opacity: 0.9;
+    margin-bottom: 1.6rem;
+}
+
+.story-quote {
+    border-left: 3px solid var(--terracotta);
+    padding-left: 1.5rem;
+    margin-top: 1.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--ink);
+    opacity: 0.9;
+}
+
+.story-image {
+    position: relative;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow:
+        0 8px 32px rgba(26,22,18,0.12),
+        0 4px 16px rgba(26,22,18,0.08);
+    filter: sepia(4%) saturate(1.02);
+}
+
+.image-caption {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+    color: var(--terracotta);
+    text-align: center;
+    opacity: 0.85;
+}
+
+/* ---------- PHILOSOPHY ---------- */
+
+.philosophy-section {
+    padding: 6rem 3rem;
+    background:
+        radial-gradient(circle at 30% 50%, rgba(107,124,94,0.03) 0%, transparent 60%),
+        linear-gradient(to bottom, var(--paper-dark) 0%, var(--paper) 100%);
+}
+
+.philosophy-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.philosophy-title {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 3rem;
+}
+
+.philosophy-text {
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: var(--charcoal);
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.core-belief {
+    background: rgba(198, 93, 59, 0.05);
+    border: 1px solid rgba(198, 93, 59, 0.15);
+    padding: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.hindi-quote {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+}
+
+.english-translation {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    opacity: 0.75;
+    color: var(--charcoal);
+}
+
+/* ---------- PERSONAL GALLERY ---------- */
+
+.personal-gallery {
+    padding: 6rem 3rem;
+    background: var(--paper);
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.gallery-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 1rem;
+}
+
+.gallery-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--charcoal);
+    opacity: 0.75;
+}
+
+.gallery-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow:
+        0 8px 24px rgba(26,22,18,0.1),
+        0 4px 12px rgba(26,22,18,0.08);
+    filter: sepia(4%) saturate(1.02);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 32px rgba(26,22,18,0.15),
+        0 6px 16px rgba(26,22,18,0.1);
+}
+
+.gallery-note {
+    display: block;
+    margin-top: 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.15rem;
+    color: var(--terracotta);
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* ---------- CLOSING NOTE ---------- */
+
+.closing-note {
+    padding: 5rem 3rem 6rem;
+    background: linear-gradient(to bottom, var(--paper) 0%, var(--paper-dark) 100%);
+    text-align: center;
+}
+
+.closing-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.closing-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    line-height: 1.85;
+    color: var(--ink);
+    font-style: italic;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.closing-container .btn {
+    display: inline-flex;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-portrait {
+        justify-self: flex-start;
+        max-width: 360px;
+    }
+
+    .portrait-note {
+        bottom: -1rem;
+        left: 0.5rem;
+        transform: rotate(0deg);
+    }
+
+    .life-journey {
+        padding: 4rem 2rem;
+    }
+
+    .story-block {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .story-block.layout-left .story-content,
+    .story-block.layout-right .story-content {
+        order: 1;
+    }
+
+    .story-block.layout-left .story-image,
+    .story-block.layout-right .story-image {
+        order: 2;
+    }
+
+    .philosophy-section {
+        padding: 4rem 2rem;
+    }
+
+    .personal-gallery {
+        padding: 4rem 2rem;
+    }
+
+    .closing-note {
+        padding: 4rem 2rem 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-text,
+    .story-text,
+    .philosophy-text,
+    .closing-text {
+        font-size: 1rem;
+    }
+
+    .story-heading {
+        font-size: 1.6rem;
+    }
+
+    .hindi-quote {
+        font-size: 1.4rem;
+    }
+}

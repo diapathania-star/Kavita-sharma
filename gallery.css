@@ -1,0 +1,690 @@
+/* ==========================================
+   EXHIBITION GALLERY STYLES
+   Artistic, museum-like presentation
+   ========================================== */
+
+/* Exhibition Hero */
+.exhibition-hero {
+    padding: 8rem 3rem 5rem;
+    background: 
+        radial-gradient(ellipse at center, transparent 0%, rgba(26, 22, 18, 0.03) 100%),
+        linear-gradient(135deg, var(--paper) 0%, var(--paper-dark) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.exhibition-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(26, 22, 18, 0.01) 2px,
+            rgba(26, 22, 18, 0.01) 4px
+        );
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.exhibition-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.exhibition-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 8px rgba(26, 22, 18, 0.03);
+}
+
+.exhibition-line {
+    width: 80px;
+    height: 1px;
+    background: var(--terracotta);
+    margin: 0 auto 2rem;
+    position: relative;
+}
+
+.exhibition-line::before,
+.exhibition-line::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--terracotta);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.exhibition-line::before {
+    left: -8px;
+}
+
+.exhibition-line::after {
+    right: -8px;
+}
+
+.curatorial-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--charcoal);
+    font-style: italic;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 0 1px 3px rgba(26, 22, 18, 0.02);
+}
+
+/* Exhibition Filters */
+.exhibition-filters {
+    padding: 3.5rem 3rem 2.5rem;
+    background: var(--paper);
+    border-bottom: 1px solid rgba(26, 22, 18, 0.06);
+    position: relative;
+}
+
+.exhibition-filters::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(26, 22, 18, 0.08) 50%,
+        transparent 100%
+    );
+}
+
+.filters-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.filter-label {
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem;
+    color: var(--terracotta);
+    display: block;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+    opacity: 0.85;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.7rem 1.85rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid rgba(26, 22, 18, 0.15);
+    color: var(--ink);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    letter-spacing: 0.03em;
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--ink);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.filter-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.filter-btn:hover::before,
+.filter-btn.active::before {
+    transform: translateY(0);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: var(--paper);
+    border-color: var(--ink);
+}
+
+/* Exhibition Gallery */
+.exhibition-gallery {
+    padding: 5rem 3rem 7rem;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(198, 93, 59, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(107, 124, 94, 0.02) 0%, transparent 50%),
+        var(--paper);
+}
+
+.gallery-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 4.5rem 3rem;
+}
+
+/* Artwork Card */
+.artwork-card {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 4px 12px rgba(26, 22, 18, 0.06));
+}
+
+.artwork-card::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 32px;
+    height: 32px;
+    background: var(--paper-dark);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 1;
+    box-shadow: inset 0 1px 3px rgba(26, 22, 18, 0.1);
+}
+
+.artwork-card:hover {
+    transform: translateY(-8px);
+    filter: drop-shadow(0 12px 32px rgba(26, 22, 18, 0.12));
+}
+
+.artwork-card:hover::before {
+    opacity: 1;
+    top: -12px;
+    right: -12px;
+}
+
+.artwork-image-wrapper {
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: var(--paper-dark);
+    margin-bottom: 1.5rem;
+    border: 10px solid var(--paper);
+    box-shadow: 
+        0 4px 16px rgba(26, 22, 18, 0.08),
+        0 12px 40px rgba(26, 22, 18, 0.06),
+        inset 0 0 0 1px rgba(26, 22, 18, 0.04),
+        inset 0 2px 8px rgba(26, 22, 18, 0.02);
+    transition: all 0.6s ease;
+}
+
+.artwork-image-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.artwork-card:hover .artwork-image-wrapper {
+    box-shadow: 
+        0 8px 24px rgba(26, 22, 18, 0.12),
+        0 20px 56px rgba(26, 22, 18, 0.1),
+        inset 0 0 0 1px rgba(26, 22, 18, 0.08),
+        inset 0 2px 12px rgba(26, 22, 18, 0.04);
+    border-color: #f5ede0;
+}
+
+.artwork-card:hover .artwork-image-wrapper::after {
+    opacity: 1;
+}
+
+.artwork-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: sepia(4%) saturate(1.04) contrast(1.01) brightness(0.99);
+}
+
+.artwork-card:hover .artwork-image-wrapper img {
+    transform: scale(1.04);
+    filter: sepia(6%) saturate(1.06) contrast(1.02) brightness(0.98);
+}
+
+.artwork-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top, 
+        rgba(26, 22, 18, 0.94) 0%, 
+        rgba(26, 22, 18, 0.5) 35%,
+        rgba(26, 22, 18, 0.1) 60%,
+        transparent 75%
+    );
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 2.25rem 2rem;
+}
+
+.artwork-card:hover .artwork-overlay {
+    opacity: 1;
+}
+
+.artwork-teaser {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--paper);
+    font-style: italic;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.artwork-card:hover .artwork-teaser {
+    opacity: 0.96;
+    transform: translateY(0);
+}
+
+/* Artwork Info */
+.artwork-info {
+    text-align: center;
+    padding: 0 0.75rem;
+}
+
+.artwork-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    transition: color 0.4s ease;
+}
+
+.artwork-card:hover .artwork-title {
+    color: var(--terracotta);
+}
+
+.artwork-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.artwork-price {
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-shadow: 0 1px 3px rgba(201, 162, 39, 0.2);
+}
+
+.artwork-status {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.artwork-status.available {
+    color: var(--sage);
+    background: rgba(107, 124, 94, 0.1);
+    border: 1px solid rgba(107, 124, 94, 0.2);
+}
+
+.artwork-status.sold {
+    color: var(--charcoal);
+    background: rgba(61, 58, 54, 0.08);
+    border: 1px solid rgba(61, 58, 54, 0.15);
+    opacity: 0.7;
+}
+
+/* Exhibition Note */
+.exhibition-note {
+    padding: 4rem 3rem;
+    background: linear-gradient(135deg, var(--paper-dark) 0%, var(--paper) 100%);
+    text-align: center;
+}
+
+.note-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.note-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: var(--ink);
+    font-style: italic;
+}
+
+.note-text a {
+    color: var(--terracotta);
+    text-decoration: none;
+    border-bottom: 1px solid var(--terracotta);
+    transition: all 0.3s ease;
+}
+
+.note-text a:hover {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+}
+
+/* Lightbox Modal */
+.artwork-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 22, 18, 0.97);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    backdrop-filter: blur(12px);
+    animation: fadeIn 0.4s ease-out;
+}
+
+.artwork-lightbox.active {
+    display: flex;
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 52px;
+    height: 52px;
+    background: rgba(247, 243, 235, 0.08);
+    border: 1px solid rgba(247, 243, 235, 0.15);
+    border-radius: 50%;
+    color: var(--paper);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2001;
+    backdrop-filter: blur(8px);
+}
+
+.lightbox-close:hover {
+    background: rgba(247, 243, 235, 0.15);
+    transform: rotate(90deg);
+    border-color: rgba(247, 243, 235, 0.3);
+}
+
+.lightbox-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1400px;
+    width: 100%;
+    background: var(--paper);
+    padding: 3.5rem;
+    box-shadow: 
+        0 24px 72px rgba(0, 0, 0, 0.6),
+        0 8px 24px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 2px;
+}
+
+.lightbox-image-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    padding: 1rem;
+}
+
+.lightbox-image-section img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 
+        0 16px 48px rgba(26, 22, 18, 0.2),
+        0 8px 24px rgba(26, 22, 18, 0.15),
+        inset 0 0 0 1px rgba(26, 22, 18, 0.05);
+    border: 8px solid rgba(255, 255, 255, 0.5);
+}
+
+.lightbox-details-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding-left: 1rem;
+}
+
+.lightbox-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.75rem;
+    font-weight: 300;
+    color: var(--ink);
+    margin-bottom: 1.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.lightbox-story {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--charcoal);
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(26, 22, 18, 0.08);
+    opacity: 0.92;
+    font-style: italic;
+}
+
+.lightbox-specs {
+    display: grid;
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(26, 22, 18, 0.08);
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    color: var(--charcoal);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.65;
+}
+
+.spec-value {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--ink);
+    font-weight: 500;
+    text-align: right;
+}
+
+body[lang="hi"] .spec-value {
+    font-family: 'Hind', sans-serif;
+}
+
+.lightbox-cta {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.lightbox-divider {
+    width: 60px;
+    height: 2px;
+    background: var(--terracotta);
+    margin: 2.5rem auto 2rem;
+    opacity: 0.4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 3rem 2rem;
+    }
+
+    .lightbox-container {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+        padding: 2rem;
+    }
+
+    .lightbox-image-section img {
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .exhibition-hero {
+        padding: 6rem 2rem 3rem;
+    }
+
+    .exhibition-title {
+        font-size: 2rem;
+    }
+
+    .curatorial-note {
+        font-size: 1rem;
+    }
+
+    .exhibition-filters {
+        padding: 2rem 1.5rem;
+    }
+
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+    }
+
+    .lightbox-container {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .lightbox-title {
+        font-size: 2rem;
+    }
+
+    .lightbox-close {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .exhibition-hero {
+        padding: 5rem 1.5rem 2.5rem;
+    }
+
+    .exhibition-gallery {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+    .artwork-title {
+        font-size: 1.25rem;
+    }
+
+    .artwork-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .lightbox-container {
+        padding: 1rem;
+    }
+
+    .lightbox-details-section {
+        padding-right: 0;
+    }
+}

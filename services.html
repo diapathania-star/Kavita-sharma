@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Commission custom art from Kavita Sharma. Custom portraits, mehndi designs, and art classes.">
+    <title>Services | Kavita Sharma</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Caveat:wght@500;600&family=DM+Sans:wght@400;500&family=Hind:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Art8.css">
+</head>
+<body lang="en">
+    
+    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Switch Language" title="Switch Language / भाषा बदलें">
+        <span data-lang="en">हिं</span>
+        <span data-lang="hi">EN</span>
+    </button>
+
+    <nav>
+        <a href="index.html" class="logo" aria-label="Kavita Sharma Home">
+            <span data-lang="en">Kavita Sharma</span>
+            <span data-lang="hi">कविता शर्मा</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hi">परिचय</span></a></li>
+            <li><a href="gallery.html"><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span></a></li>
+            <li><a href="services.html" class="active"><span data-lang="en">Services</span><span data-lang="hi">सेवाएं</span></a></li>
+            <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span></a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <section class="services-hero">
+        <div class="services-hero-content reveal">
+            <h1>
+                <span data-lang="en">Every commission begins with a conversation.</span>
+                <span data-lang="hi">हर कमीशन एक बातचीत से शुरू होता है।</span>
+            </h1>
+            <p>
+                <span data-lang="en">Whether you have a photograph or just a feeling, we can build it together.</span>
+                <span data-lang="hi">चाहे आपके पास एक तस्वीर हो या सिर्फ एक एहसास, हम इसे एक साथ बना सकते हैं।</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="section-header reveal">
+            <span class="section-tag">
+                <span data-lang="en">What I Offer</span>
+                <span data-lang="hi">कला सेवाएं</span>
+            </span>
+            <h2 class="section-title">
+                <span data-lang="en">Art Services</span>
+                <span data-lang="hi">विशेष पेशकश</span>
+            </h2>
+            <div class="hand-drawn-line">
+                <svg viewBox="0 0 100 30">
+                    <path d="M0 15 Q25 5, 50 15 T100 15"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                    <circle cx="11" cy="11" r="2"/>
+                </svg>
+                <div data-lang="en">
+                    <h3>Custom Portraits</h3>
+                    <p>Transform your cherished photographs into hand-drawn masterpieces. I capture not just likeness, but spirit—the warmth in a smile, the memory in a glance.</p>
+                    <p class="service-price">Starting ₹10,000</p>
+                </div>
+                <div data-lang="hi">
+                    <h3>रूहानी चित्र</h3>
+                    <p>अपनी प्रिय तस्वीरों को हाथ से बने कलाकारिनी में बदलें। मैं सिर्फ समानता नहीं, बल्कि आत्मा को कैद करती हूँ—मुस्कान में गर्मी, नज़र में याद।</p>
+                    <p class="service-price">शुरुआत ₹10,000</p>
+                </div>
+            </div>
+            
+            <div class="service-card reveal">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <div data-lang="en">
+                    <h3>Mehndi Designs on Paper</h3>
+                    <p>Intricate henna-inspired artwork that brings the beauty of mehndi tradition to your walls. Each pattern tells a story of celebration, connection, and joy.</p>
+                    <p class="service-price">Starting ₹8,000</p>
+                </div>
+                <div data-lang="hi">
+                    <h3>कागज़ पर मेहंदी कला</h3>
+                    <p>बारीक मेहंदी प्रेरित कलाकृति जो मेहंदी परंपरा की सुंदरता को आपकी दीवारों पर लाती है। हर पैटर्न उत्सव, कनेक्शन और खुशी की कहानी कहता है।</p>
+                    <p class="service-price">शुरुआत ₹8,000</p>
+                </div>
+            </div>
+            
+            <div class="service-card reveal">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                    <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                </svg>
+                <div data-lang="en">
+                    <h3>Art Classes</h3>
+                    <p>Learn traditional techniques and free your hand to create. Private sessions for all skill levels. I don't teach replication—I teach freedom.</p>
+                    <p class="service-price">Starting ₹15,000</p>
+                </div>
+                <div data-lang="hi">
+                    <h3>कला साधना</h3>
+                    <p>पारंपरिक तकनीकों को सीखें और अपने हाथ को बनाने के लिए मुक्त करें। सभी कौशल स्तरों के लिए निजी सत्र। मैं नकल नहीं सिखाती—मैं स्वतंत्रता सिखाती हूँ।</p>
+                    <p class="service-price">शुरुआत ₹15,000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="section-header reveal">
+            <span class="section-tag">
+                <span data-lang="en">How It Works</span>
+                <span data-lang="hi">यह कैसे काम करता है</span>
+            </span>
+            <h2 class="section-title">
+                <span data-lang="en">The Commission Process</span>
+                <span data-lang="hi">कमीशन प्रक्रिया</span>
+            </h2>
+            <div class="hand-drawn-line">
+                <svg viewBox="0 0 100 30">
+                    <path d="M0 15 Q25 5, 50 15 T100 15"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step reveal">
+                <div class="step-number">01</div>
+                <h3>
+                    <span data-lang="en">Share Your Memory</span>
+                    <span data-lang="hi">अपनी स्मृति साझा करें</span>
+                </h3>
+                <p data-lang="en">Send me a photograph, describe a feeling, or tell me a story. If you don't have a photo, that's okay—I can work from descriptions too.</p>
+                <p data-lang="hi">मुझे एक तस्वीर भेजें, एक एहसास का वर्णन करें, या मुझे एक कहानी बताएं। अगर आपके पास तस्वीर नहीं है, तो ठीक है—मैं विवरण से भी काम कर सकती हूँ।</p>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="step-number">02</div>
+                <h3>
+                    <span data-lang="en">Choose Size & Medium</span>
+                    <span data-lang="hi">आकार और माध्यम चुनें</span>
+                </h3>
+                <p data-lang="en">We'll discuss the right size, colors, and medium (acrylic, oil, metallic accents) based on your vision and where the piece will live.</p>
+                <p data-lang="hi">हम आपकी दृष्टि और जहां टुकड़ा रहेगा, उसके आधार पर सही आकार, रंग और माध्यम (एक्रेलिक, ऑयल, धातु उच्चारण) पर चर्चा करेंगे।</p>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="step-number">03</div>
+                <h3>
+                    <span data-lang="en">Sketch Approval (For Portraits)</span>
+                    <span data-lang="hi">स्केच अनुमोदन (चित्रों के लिए)</span>
+                </h3>
+                <p data-lang="en">For portrait commissions, I'll share a preliminary sketch for your approval before moving to color. This ensures we're aligned on the vision.</p>
+                <p data-lang="hi">पोर्ट्रेट कमीशन के लिए, मैं रंग में जाने से पहले आपकी स्वीकृति के लिए एक प्रारंभिक स्केच साझा करूँगी। यह सुनिश्चित करता है कि हम दृष्टि पर संरेखित हैं।</p>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="step-number">04</div>
+                <h3>
+                    <span data-lang="en">Creation & Delivery</span>
+                    <span data-lang="hi">निर्माण और वितरण</span>
+                </h3>
+                <p data-lang="en">I'll create your piece with care and attention. Once complete, I'll arrange delivery (local in Gurugram or shipping across India).</p>
+                <p data-lang="hi">मैं ध्यान और देखभाल के साथ आपका टुकड़ा बनाऊंगी। पूरा होने के बाद, मैं डिलीवरी की व्यवस्था करूँगी (गुरुग्राम में स्थानीय या भारत भर में शिपिंग)।</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="section-header reveal">
+            <span class="section-tag">
+                <span data-lang="en">Questions</span>
+                <span data-lang="hi">सवाल</span>
+            </span>
+            <h2 class="section-title">
+                <span data-lang="en">Frequently Asked</span>
+                <span data-lang="hi">अक्सर पूछे जाने वाले</span>
+            </h2>
+            <div class="hand-drawn-line">
+                <svg viewBox="0 0 100 30">
+                    <path d="M0 15 Q25 5, 50 15 T100 15"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item reveal">
+                <h3>
+                    <span data-lang="en">How long does a commission take?</span>
+                    <span data-lang="hi">एक कमीशन में कितना समय लगता है?</span>
+                </h3>
+                <p data-lang="en">It depends on the complexity and size. Typically, a custom portrait takes 2-4 weeks from sketch approval to completion. Mehndi designs on paper can be ready in 1-2 weeks.</p>
+                <p data-lang="hi">यह जटिलता और आकार पर निर्भर करता है। आम तौर पर, एक कस्टम पोर्ट्रेट स्केच अनुमोदन से पूर्णता तक 2-4 सप्ताह लगते हैं। कागज़ पर मेहंदी डिज़ाइन 1-2 सप्ताह में तैयार हो सकते हैं।</p>
+            </div>
+
+            <div class="faq-item reveal">
+                <h3>
+                    <span data-lang="en">Do you ship outside Gurugram?</span>
+                    <span data-lang="hi">क्या आप गुरुग्राम के बाहर शिप करते हैं?</span>
+                </h3>
+                <p data-lang="en">Yes! I ship across India with secure packaging. For international orders, please contact me to discuss shipping options.</p>
+                <p data-lang="hi">हाँ! मैं सुरक्षित पैकेजिंग के साथ पूरे भारत में शिप करती हूँ। अंतर्राष्ट्रीय ऑर्डर के लिए, कृपया शिपिंग विकल्पों पर चर्चा करने के लिए मुझसे संपर्क करें।</p>
+            </div>
+
+            <div class="faq-item reveal">
+                <h3>
+                    <span data-lang="en">Can you work from a description if I don't have a photo?</span>
+                    <span data-lang="hi">क्या आप विवरण से काम कर सकते हैं अगर मेरे पास फोटो नहीं है?</span>
+                </h3>
+                <p data-lang="en">Absolutely. Some of my most meaningful pieces have come from conversations—"She had kind eyes and always wore jasmine in her hair." Tell me what you remember, and my hands will find the lines for it.</p>
+                <p data-lang="hi">बिल्कुल। मेरे कुछ सबसे सार्थक टुकड़े बातचीत से आए हैं—"उसकी आँखें दयालु थीं और वह हमेशा अपने बालों में चमेली पहनती थी।" मुझे बताएं कि आपको क्या याद है, और मेरे हाथ इसके लिए रेखाएं ढूंढ लेंगे।</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-header reveal">
+            <span class="section-tag">
+                <span data-lang="en">Kind Words</span>
+                <span data-lang="hi">सराहना</span>
+            </span>
+            <h2 class="section-title">
+                <span data-lang="en">What Collectors Say</span>
+                <span data-lang="hi">संग्राहक क्या कहते हैं</span>
+            </h2>
+            <div class="hand-drawn-line">
+                <svg viewBox="0 0 100 30">
+                    <path d="M0 15 Q25 5, 50 15 T100 15"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-container reveal">
+                <span class="quote-mark">"</span>
+                <div data-lang="en">
+                    <p class="testimonial-text">Kavita's portrait of my grandmother brought tears to my eyes. She captured not just her likeness, but her spirit. This is more than art; it's a treasure.</p>
+                    <p class="testimonial-author">— Priya Mehta, Mumbai</p>
+                </div>
+                <div data-lang="hi">
+                    <p class="testimonial-text">कविता जी ने मेरी दादी की तस्वीर में उनकी आत्मा को कैद कर लिया। उनकी आँखों की वो चमक और मुस्कान—ये केवल चित्र नहीं, एक अनमोल खजाना है।</p>
+                    <p class="testimonial-author">— प्रिया मेहता, मुंबई</p>
+                </div>
+            </div>
+
+            <div class="testimonial-container reveal">
+                <span class="quote-mark">"</span>
+                <div data-lang="en">
+                    <p class="testimonial-text">I didn't have a photograph, just memories. Kavita listened, understood, and created something that felt like my mother was in the room again.</p>
+                    <p class="testimonial-author">— Rahul Verma, Delhi</p>
+                </div>
+                <div data-lang="hi">
+                    <p class="testimonial-text">मेरे पास तस्वीर नहीं थी, सिर्फ यादें थीं। कविता जी ने सुना, समझा, और कुछ ऐसा बनाया जैसे मेरी माँ फिर से कमरे में हों।</p>
+                    <p class="testimonial-author">— राहुल वर्मा, दिल्ली</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-strip">
+        <div class="cta-content reveal">
+            <h3>
+                <span data-lang="en">Ready to begin?</span>
+                <span data-lang="hi">शुरू करने के लिए तैयार?</span>
+            </h3>
+            <p>
+                <span data-lang="en">Let's create something beautiful together.</span>
+                <span data-lang="hi">आइए एक साथ कुछ सुंदर बनाएं।</span>
+            </p>
+            <a href="contact.html" class="btn btn-primary">
+                <span data-lang="en">Get in Touch</span>
+                <span data-lang="hi">संपर्क करें</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-logo">Kavita Sharma</p>
+        <p class="footer-tagline">
+            <span data-lang="en">Hand Drawn Memories • Archive Across Paper</span>
+            <span data-lang="hi">कागज़ पर सिमटी विरासत • स्मृतियों का हस्तशिल्प</span>
+        </p>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/handmemories.archive" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+            </a>
+        </div>
+        
+        <p class="footer-copy">
+            <span data-lang="en">© 2026 Kavita Sharma. All artworks are original creations.</span>
+            <span data-lang="hi">© 2026 कविता शर्मा। सभी कलाकृतियाँ मौलिक रचनाएं हैं।</span>
+        </p>
+    </footer>
+
+    <script src="Art8.js"></script>
+</body>
+</html>

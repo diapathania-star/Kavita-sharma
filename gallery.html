@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An intimate exhibition of Kavita Sharma's artwork - decades of quiet observation, now stepping into light.">
+    <title>Exhibition | Kavita Sharma</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Caveat:wght@500;600&family=DM+Sans:wght@400;500&family=Hind:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Art8.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body lang="en">
+    
+    <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Switch Language" title="Switch Language / भाषा बदलें">
+        <span data-lang="en">हिं</span>
+        <span data-lang="hi">EN</span>
+    </button>
+
+    <nav>
+        <a href="index.html" class="logo" aria-label="Kavita Sharma Home">
+            <span data-lang="en">Kavita Sharma</span>
+            <span data-lang="hi">कविता शर्मा</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hi">परिचय</span></a></li>
+            <li><a href="gallery.html" class="active"><span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span></a></li>
+            <li><a href="services.html"><span data-lang="en">Services</span><span data-lang="hi">सेवाएं</span></a></li>
+            <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span></a></li>
+        </ul>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Exhibition Hero -->
+    <section class="exhibition-hero">
+        <div class="exhibition-hero-content reveal">
+            <h1 class="exhibition-title">
+                <span data-lang="en">An Archive of Quiet Moments</span>
+                <span data-lang="hi">शांत पलों का संग्रह</span>
+            </h1>
+            <div class="exhibition-line"></div>
+            <p class="curatorial-note">
+                <span data-lang="en">Each piece here lived in cupboards for decades—waiting, like memories do, for the right moment to be seen. These are not just artworks. They are fragments of a life spent noticing what others overlook.</span>
+                <span data-lang="hi">यहाँ प्रत्येक टुकड़ा दशकों तक अलमारियों में रहा—प्रतीक्षा करते हुए, जैसे यादें करती हैं, देखे जाने के सही क्षण की। ये सिर्फ कलाकृतियाँ नहीं हैं। ये एक जीवन के टुकड़े हैं जो उन चीज़ों को नोटिस करने में बिता जो दूसरे अनदेखा करते हैं।</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Exhibition Filters -->
+    <section class="exhibition-filters">
+        <div class="filters-wrapper reveal">
+            <span class="filter-label">
+                <span data-lang="en">View by theme:</span>
+                <span data-lang="hi">विषय द्वारा देखें:</span>
+            </span>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <span data-lang="en">All Works</span>
+                    <span data-lang="hi">सभी कार्य</span>
+                </button>
+                <button class="filter-btn" data-filter="mehndi">
+                    <span data-lang="en">Mehndi & Pattern</span>
+                    <span data-lang="hi">मेहंदी और पैटर्न</span>
+                </button>
+                <button class="filter-btn" data-filter="portraits">
+                    <span data-lang="en">Faces & Memory</span>
+                    <span data-lang="hi">चेहरे और याद</span>
+                </button>
+                <button class="filter-btn" data-filter="sacred">
+                    <span data-lang="en">The Sacred</span>
+                    <span data-lang="hi">पवित्र</span>
+                </button>
+                <button class="filter-btn" data-filter="nature">
+                    <span data-lang="en">Nature & Light</span>
+                    <span data-lang="hi">प्रकृति और प्रकाश</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Grid -->
+    <section class="exhibition-gallery">
+        <div class="gallery-container" id="galleryContainer">
+            
+            <!-- Artwork 1 -->
+            <article class="artwork-card reveal" data-category="nature" 
+                     data-story-en="White flowers, untouched and pure. I painted these after staring at them for hours in a garden—the way they held light, the way each petal seemed to breathe. Gold centers like small suns, reminding me that even the quietest things carry their own brilliance."
+                     data-story-hi="सफेद फूल, अछूते और शुद्ध। मैंने इन्हें एक बगीचे में घंटों तक देखने के बाद चित्रित किया—जिस तरह वे प्रकाश को थामे रखते थे, जिस तरह हर पंखुड़ी साँस लेती लगती थी। सोने के केंद्र छोटे सूरजों की तरह, मुझे याद दिलाते हैं कि शांत चीज़ें भी अपनी चमक रखती हैं।"
+                     data-size-en='20" × 28"' data-size-hi='20" × 28"'
+                     data-medium-en="Acrylic & gold on canvas" data-medium-hi="कैनवास पर ऐक्रेलिक और सोना"
+                     data-year="2024" data-price="₹22,000" 
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Hero.png" alt="White Blossoms by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">Even the quietest things carry their own brilliance.</span>
+                            <span data-lang="hi">शांत चीज़ें भी अपनी चमक रखती हैं।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">White Blossoms</span>
+                        <span data-lang="hi">सफेद फूल</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹22,000</span>
+                        <span class="artwork-status available">
+                            <span data-lang="en">Available</span>
+                            <span data-lang="hi">उपलब्ध</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 2 -->
+            <article class="artwork-card reveal" data-category="nature"
+                     data-story-en="A village by the water, where birds dive and life moves slowly. I painted this from memory of mornings spent by the river—the sound of wings cutting water, the banana trees swaying, the small homes where families wake and begin again. Peace, captured on canvas."
+                     data-story-hi="पानी के किनारे एक गाँव, जहाँ पक्षी गोता लगाते हैं और जीवन धीरे-धीरे चलता है। मैंने इसे नदी के किनारे बिताई गई सुबहों की याद से चित्रित किया—पानी को काटते पंखों की आवाज़, केले के पेड़ झूमते हुए, छोटे घर जहाँ परिवार जागते हैं और फिर से शुरू करते हैं। शांति, कैनवास पर कैद।"
+                     data-size-en='18" × 24"' data-size-hi='18" × 24"'
+                     data-medium-en="Acrylic on canvas" data-medium-hi="कैनवास पर ऐक्रेलिक"
+                     data-year="2023" data-price="₹18,000"
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Birds.png" alt="River Birds by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">Where birds dive and life moves slowly.</span>
+                            <span data-lang="hi">जहाँ पक्षी गोता लगाते हैं और जीवन धीरे चलता है।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">River Birds</span>
+                        <span data-lang="hi">नदी के पक्षी</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹18,000</span>
+                        <span class="artwork-status sold-out">
+                            <span data-lang="en">Sold out</span>
+                            <span data-lang="hi">बिक गया</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 3 -->
+            <article class="artwork-card reveal" data-category="nature"
+                     data-story-en="'The Life melts away drop by drop.' This candle became a meditation on time, on impermanence. I wrote the words as I painted, letting them become part of the image. A reminder that beauty and endings are inseparable."
+                     data-story-hi="'जीवन बूंद-बूंद पिघलता है।' यह मोमबत्ती समय पर, अनित्यता पर एक ध्यान बन गई। मैंने शब्दों को चित्र का हिस्सा बनने देते हुए लिखा। एक याद दिलाना कि सुंदरता और अंत अविभाज्य हैं।"
+                     data-size-en='16" × 20"' data-size-hi='16" × 20"'
+                     data-medium-en="Acrylic on canvas" data-medium-hi="कैनवास पर ऐक्रेलिक"
+                     data-year="2022" data-price="₹15,000"
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Life melts.png" alt="Life Melts Away by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">A meditation on time and impermanence.</span>
+                            <span data-lang="hi">समय और अनित्यता पर एक ध्यान।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">Life Melts Away</span>
+                        <span data-lang="hi">जीवन पिघलता है</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹15,000</span>
+                        <span class="artwork-status sold-out">
+                            <span data-lang="en">Sold out</span>
+                            <span data-lang="hi">बिक गया</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 4 -->
+            <article class="artwork-card reveal" data-category="sacred"
+                     data-story-en="Meerabai, the poet-saint who surrendered everything to devotion. Her story always moved me—how she sang even when the world turned against her, how her faith became her freedom. I painted her in yellow light, the color of divinity and longing."
+                     data-story-hi="मीराबाई, कवयित्री-संत जिन्होंने भक्ति में सब कुछ समर्पित कर दिया। उनकी कहानी ने हमेशा मुझे प्रभावित किया—कैसे वह गाती रहीं जब दुनिया उनके खिलाफ हो गई, कैसे उनका विश्वास उनकी स्वतंत्रता बन गया। मैंने उन्हें पीली रोशनी में चित्रित किया, दिव्यता और लालसा का रंग।"
+                     data-size-en='14" × 18"' data-size-hi='14" × 18"'
+                     data-medium-en="Ink & watercolor on paper" data-medium-hi="कागज़ पर स्याही और जलरंग"
+                     data-year="2023" data-price="₹12,000"
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Meerbai.jpeg" alt="Meerabai by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">How faith became her freedom.</span>
+                            <span data-lang="hi">कैसे विश्वास उनकी स्वतंत्रता बना।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">Meerabai</span>
+                        <span data-lang="hi">मीराबाई</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹12,000</span>
+                        <span class="artwork-status available">
+                            <span data-lang="en">Available</span>
+                            <span data-lang="hi">उपलब्ध</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 5 -->
+            <article class="artwork-card reveal" data-category="sacred"
+                     data-story-en="Blessings whispered in gold and silence. Ganesha was always there in our home—on the wall, in prayers, in the quiet moments before we began anything important. This piece is my way of honoring that presence."
+                     data-story-hi="सोने और मौन में फुसफुसाए गए आशीर्वाद। गणेश हमेशा हमारे घर में थे—दीवार पर, प्रार्थनाओं में, उन शांत पलों में जब हम कुछ महत्वपूर्ण शुरू करते थे। यह टुकड़ा उस उपस्थिति का सम्मान करने का मेरा तरीका है।"
+                     data-size-en='20" × 28"' data-size-hi='20" × 28"'
+                     data-medium-en="Metallic acrylic on board" data-medium-hi="बोर्ड पर धातु ऐक्रेलिक"
+                     data-year="2024" data-price="₹30,000"
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Image3.jpeg" alt="Ganesha's Blessing by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">Blessings whispered in gold and silence.</span>
+                            <span data-lang="hi">सोने और मौन में फुसफुसाए गए आशीर्वाद।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">Ganesha's Blessing</span>
+                        <span data-lang="hi">गणेश आशीर्वाद</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹30,000</span>
+                        <span class="artwork-status available">
+                            <span data-lang="en">Available</span>
+                            <span data-lang="hi">उपलब्ध</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 4 -->
+            <article class="artwork-card reveal" data-category="nature"
+                     data-story-en="The glow of diyas, the warmth of togetherness. Diwali was never about the big moments for me. It was about the small ones—lighting diyas with my children, the way the flame would flicker but never go out."
+                     data-story-hi="दियों की चमक, साथ की गर्माहट। दिवाली मेरे लिए कभी बड़े पलों के बारे में नहीं थी। यह छोटे पलों के बारे में थी—अपने बच्चों के साथ दिये जलाना, जिस तरह लौ झिलमिलाती थी लेकिन कभी बुझती नहीं थी।"
+                     data-size-en='16" × 20"' data-size-hi='16" × 20"'
+                     data-medium-en="Acrylic on paper" data-medium-hi="कागज़ पर ऐक्रेलिक"
+                     data-year="2022" data-price="₹18,000"
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Image4.jpeg" alt="Festival Light by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">The glow of diyas, the warmth of togetherness.</span>
+                            <span data-lang="hi">दियों की चमक, साथ की गर्माहट।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">Festival Light</span>
+                        <span data-lang="hi">उत्सव की ज्योति</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹18,000</span>
+                        <span class="artwork-status available">
+                            <span data-lang="en">Available</span>
+                            <span data-lang="hi">उपलब्ध</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 5 -->
+            <article class="artwork-card reveal" data-category="sacred"
+                     data-story-en="Shiva, the destroyer and creator, holding stillness and power at once. I used metallic ink for the raised lines—the way metal catches light felt like the right way to honor him. Every curve, every symbol, drawn with reverence."
+                     data-story-hi="शिव, विनाशक और निर्माता, एक साथ स्थिरता और शक्ति धारण करते हुए। मैंने उभरी हुई रेखाओं के लिए धातु स्याही का उपयोग किया—जिस तरह धातु प्रकाश को पकड़ती है वह उन्हें सम्मान देने का सही तरीका लगा। हर वक्र, हर प्रतीक, श्रद्धा के साथ बनाया गया।"
+                     data-size-en='12" × 16"' data-size-hi='12" × 16"'
+                     data-medium-en="Metallic ink & charcoal on paper" data-medium-hi="कागज़ पर धातु स्याही और चारकोल"
+                     data-year="2024" data-price="₹16,000"
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Shiv ji.png" alt="Shiva by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">Stillness and power, held in one form.</span>
+                            <span data-lang="hi">स्थिरता और शक्ति, एक रूप में धारण।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">Shiva</span>
+                        <span data-lang="hi">शिव</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹16,000</span>
+                        <span class="artwork-status available">
+                            <span data-lang="en">Available</span>
+                            <span data-lang="hi">उपलब्ध</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Artwork 6 -->
+            <article class="artwork-card reveal" data-category="mehndi"
+                     data-story-en="Every bride carries a story on her hands. I've watched countless brides over the years. Each one nervous, excited, overwhelmed. And yet, when the mehndi artist began, they would all go still—as if the pattern itself was calming them."
+                     data-story-hi="हर दुल्हन अपने हाथों पर एक कहानी रखती है। मैंने वर्षों में अनगिनत दुल्हनें देखी हैं। हर एक नर्वस, उत्साहित, अभिभूत। और फिर भी, जब मेहंदी कलाकार ने शुरू किया, वे सभी शांत हो गईं—जैसे पैटर्न खुद उन्हें शांत कर रहा था।"
+                     data-size-en='22" × 28"' data-size-hi='22" × 28"'
+                     data-medium-en="Acrylic & metallic ink on paper" data-medium-hi="कागज़ पर ऐक्रेलिक और धातु स्याही"
+                     data-year="2023" data-price="₹20,000"
+                     data-status-en="Available" data-status-hi="उपलब्ध">
+                <div class="artwork-image-wrapper">
+                    <img src="Art_img/Image1.jpeg" alt="Bridal Mehndi by Kavita Sharma" loading="lazy">
+                    <div class="artwork-overlay">
+                        <p class="artwork-teaser">
+                            <span data-lang="en">Every bride carries a story on her hands.</span>
+                            <span data-lang="hi">हर दुल्हन अपने हाथों पर एक कहानी रखती है।</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="artwork-info">
+                    <h3 class="artwork-title">
+                        <span data-lang="en">Bridal Mehndi</span>
+                        <span data-lang="hi">दुल्हन की मेहंदी</span>
+                    </h3>
+                    <div class="artwork-meta">
+                        <span class="artwork-price">₹20,000</span>
+                        <span class="artwork-status available">
+                            <span data-lang="en">Available</span>
+                            <span data-lang="hi">उपलब्ध</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Exhibition Note -->
+    <section class="exhibition-note">
+        <div class="note-wrapper reveal">
+            <p class="note-text">
+                <span data-lang="en">If you don't see what you're looking for, it may still exist—tucked away in a sketchbook, waiting to be brought to life. <a href="contact.html">Let's talk.</a></span>
+                <span data-lang="hi">अगर आपको वो नहीं मिल रहा जो आप ढूंढ रहे हैं, तो यह अभी भी मौजूद हो सकता है—एक स्केचबुक में छिपा हुआ, जीवंत होने की प्रतीक्षा में। <a href="contact.html">आइए बात करें।</a></span>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-logo">Kavita Sharma</p>
+        <p class="footer-tagline">
+            <span data-lang="en">Hand Drawn Memories • Archive Across Paper</span>
+            <span data-lang="hi">कागज़ पर सिमटी विरासत • स्मृतियों का हस्तशिल्प</span>
+        </p>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/handmemories.archive" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+            </a>
+        </div>
+        
+        <p class="footer-copy">
+            <span data-lang="en">© 2026 Kavita Sharma. All artworks are original creations.</span>
+            <span data-lang="hi">© 2026 कविता शर्मा। सभी कलाकृतियाँ मौलिक रचनाएं हैं।</span>
+        </p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="artworkLightbox" class="artwork-lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <div class="lightbox-container">
+            <div class="lightbox-image-section">
+                <img id="lightboxImage" src="" alt="">
+            </div>
+            <div class="lightbox-details-section">
+                <h2 id="lightboxTitle" class="lightbox-title"></h2>
+                <div id="lightboxStory" class="lightbox-story"></div>
+                <div class="lightbox-specs">
+                    <div class="spec-item">
+                        <span class="spec-label">
+                            <span data-lang="en">Size:</span>
+                            <span data-lang="hi">आकार:</span>
+                        </span>
+                        <span id="lightboxSize" class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">
+                            <span data-lang="en">Medium:</span>
+                            <span data-lang="hi">माध्यम:</span>
+                        </span>
+                        <span id="lightboxMedium" class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">
+                            <span data-lang="en">Year:</span>
+                            <span data-lang="hi">वर्ष:</span>
+                        </span>
+                        <span id="lightboxYear" class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">
+                            <span data-lang="en">Price:</span>
+                            <span data-lang="hi">मूल्य:</span>
+                        </span>
+                        <span id="lightboxPrice" class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">
+                            <span data-lang="en">Status:</span>
+                            <span data-lang="hi">स्थिति:</span>
+                        </span>
+                        <span id="lightboxStatus" class="spec-value"></span>
+                    </div>
+                </div>
+                <div class="lightbox-divider"></div>
+                <a href="contact.html" class="btn btn-primary lightbox-cta">
+                    <span data-lang="en">Inquire About This Piece</span>
+                    <span data-lang="hi">इस टुकड़े के बारे में पूछताछ करें</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="Art8.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
